@@ -1,0 +1,95 @@
+/* https://codersblock.com/blog/what-can-you-put-in-a-css-variable/ */
+:root {
+    --length: 800px;
+    --bgcolor: antiquewhite;
+    --canvas: 250;
+}
+@font-face {
+    font-family: "Source Sans Pro";
+    /* https://www.fontsquirrel.com/fonts/source-sans-pro */
+    src: url("https://www.lcg.ufrj.br/cwdc/3-javascript/bigint/source-sans-pro/SourceSansPro-Regular.otf")
+        format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+.eqnFont {
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+    margin: 2em 0 2em 0;
+    width: auto;
+    display: inline-block;
+}
+mark {
+    background-color: var(--bgcolor);
+    color: green;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+
+    height: 100vh;
+    width: 100vw;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #c9d484;
+}
+.container_bi {
+    width: var(--length);
+    border: 4px solid brown;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: justify;
+    background-color: var(--bgcolor);
+    cursor: move;
+}
+
+.circules_canvas {
+    border: 4px solid brown !important;
+    cursor: move;
+    
+}
+.canvas_title {
+    margin: 0px;
+    padding: 0px;
+
+    color: brown;
+}
+
+.canvas_titles_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100px;
+    width: 100%;
+
+    /* border: 3px solid blue; */
+}
+.centered {
+    text-align: center;
+}
+label {
+    display: block;
+    text-align: center;
+    width: var(--length);
+}
+span.subsup {
+    position: relative;
+}
+span.subsup sub {
+    position: absolute;
+    left: 0em;
+    bottom: -0.4em;
+}
